@@ -6,11 +6,10 @@ export default function Message(props) {
     <div className="Message">
 
     From:<br/>
+
       {props.from}<br/>
       Subject:<br/>
        {props.title}<br/>
-       {props.content}<br/><br/>
-
     </div>
   );
 };
