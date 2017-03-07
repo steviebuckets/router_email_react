@@ -5,12 +5,12 @@ export default function App(props) {
   return(
     <div>
     <h1>
-  <Link to={'/Read/'}>
+  <Link to={'/read'}>
   Inbox
   </Link>
     </h1>
     <h1>
-  <Link to={'/spam/'}>
+  <Link to={'/spam'}>
   Spam
   </Link>
     </h1>

@@ -8,14 +8,17 @@ import Spam from './components/spam';
 import Openm from './components/openm';
 import Opens from './components/opens';
 import Read from './components/read';
+import MessageContainer from './components/message-container';
 
 const routes =(
   <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Inbox} />
-      <Route path="/read" component={Read} />
-      <Route path="/spam" component={Spam} />
-        <Route path="/openm" component={Openm} />
+      
+        <Route path="/openm" component={Openm} >
+          <Route path =":messageId" component={MessageContainer} />
+        </Route>
+
         <Route path="/opens" component={Opens} />
     </Route>
   </Router>

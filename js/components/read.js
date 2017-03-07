@@ -20,9 +20,9 @@ return(
 
   </div>
   <ul>
-    <Link to={'/Openm'}>
+
     {messages}
-        </Link>
+
 </ul>
   </div>
 );
